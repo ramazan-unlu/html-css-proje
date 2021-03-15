@@ -1,0 +1,637 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+/*NAVBAR*/
+nav{
+    background-color: #6699ff;
+   display: flex;
+   justify-content: space-between; 
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    margin: 0 30px 0 0 ;
+    
+}
+nav a{
+    text-decoration: none;
+    font-size: 24px;
+    color: #363945;
+}
+
+nav .logo-box{
+    display: flex;
+    align-items: center; 
+    padding: 5px;
+}
+nav .logo{
+    width: 80px;
+    height: 60px;    
+}
+nav ul .bir{
+    position: relative;
+    padding: 15px 15px 10px 15px;
+   
+}
+nav ul .bir a::after{
+    content:'';
+    width: 0;
+    height: 3px;
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+    background-color: #A0DAA9;
+    
+}
+nav ul .bir:hover a::after{
+    width: 100%;
+    transition: 0.7s;
+}
+/*HEADER*/
+header{
+    background-image:  linear-gradient(to top right, rgba(234, 222, 219,0.5),rgba(246, 240, 239,0.8)), url(/img/arkaplan.jpg);
+    background-size:cover ;
+    background-position: center ;
+    height:650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slogan-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.slogan{
+    text-transform: capitalize;
+    font-size: 97px;
+    text-align: center;
+   
+}
+
+.button{
+    background-color:#29a329;
+    width: 300px;
+    height: 60px;
+    border-radius: 20px;
+    font-size: 42px;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 10px;
+    text-align: center;  
+    margin: 20px 0 0 0;
+}
+
+.button:hover{
+    background-color: #29bd29;
+}
+
+/*HAKKIMIZDA*/
+#about{
+    text-align: center;
+    background-color: #EADEDB;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#about .about-text{
+    padding: 30px;
+    font-size: 25px;
+    font-weight: 300;
+    
+}
+
+.about-heading{
+    width: 200px;
+    height: 50px;
+    padding-top:30px ;
+    position: absolute;
+    top: 0;
+    
+}
+.about-heading h4{
+    font-size: 34px;
+    border-bottom: 3px solid black;
+    
+}
+
+
+/*MİSYON VE VİZYON*/
+#mission-vission{
+    background-image: linear-gradient(rgba(217, 217, 217,0.7),rgba(179, 179, 179,0.7)),
+     url(/img/background-2.jpg);
+    background-position:center ;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#mission-vission .mission-vission-text{
+    font-size: 34px;
+    font-weight: 300;
+    position: absolute; 
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   flex-direction: column;
+   padding: 10px;
+   
+
+
+}
+#mission-vission .heading-box{
+    height:50px;
+    width:200px; 
+    position: relative;
+    
+}
+#mission-vission .mission-vission-text .text-item{
+   padding: 20px 0 0 0;
+}
+
+#mission-vission .mission-heading{
+   border-bottom: 3px solid black;
+}
+
+/*PROJELER*/
+#projects{
+   background-color:#669999;
+   height: 450px;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  position: relative;
+
+}
+#projects .project-box{ 
+    background-color:#669999 ;
+    height: 250px;
+    width: 350px;
+    border-radius: 5px 0 0px 5px;
+    
+}
+#projects .boca{
+    background-color: #669999;
+    width: 600px;
+    border-radius: 0 5px 5px 0;
+    
+   
+}
+.uzucu-progress{
+    margin:10px;
+    margin-top: 5px;
+    
+}
+.progress-text{
+    padding: 20px 0 0 0;
+    font-size: 20px;
+}
+
+#projects .projects-box{
+   height:50px;
+   width:200px;
+   position: absolute;
+   margin: 20px;
+   left:40%;
+   top:0;
+   font-size: 34px;
+   text-align: center;
+}
+#projects .projects-box .projects-heading{
+    padding: 10px 0 0 0;
+    border-bottom: 3px solid black;   
+}
+
+.yüzde{
+    margin-left:270px ;
+    padding-top: 2px;
+}
+.uzucu-progress{
+    position: relative;
+}
+.project-danger{
+    position:absolute;
+    right: 10%;
+    top: 0;
+}
+.project-danger img{
+    height: 220px;
+}
+#projects .project-box .progress-bar{
+    width: 300px;
+    height: 20px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 5px;
+}
+#projects .project-box .progress-bar.cart::before{
+    content: '';
+    width: 225px;
+    height:20px;
+    background-color:#00A170;
+    position: absolute;
+    border-radius: 5px;
+   
+}
+#projects .project-box .progress-bar.kekstra::before{
+    content: '';
+    width: 90px;
+    height:20px;
+    background-color:red;
+    position: absolute;
+    border-radius: 5px;
+   
+}
+#projects .project-box .progress-bar.orkestra::before{
+    content: '';
+    width: 180px;
+    height:20px;
+    background-color:#F5DF4D;
+    position: absolute;
+    border-radius: 5px;
+   
+}
+#projects .project-box .progress-bar.opera::before{
+    content: '';
+    width: 260px;
+    height:20px;
+    background-color:green;
+    position: absolute;
+    border-radius: 5px;
+    z-index: 1;
+   
+}
+#projects .project-box .progress-bar.kadavra::before{
+    content: '';
+    width: 260px;
+    height:20px;
+    background-color:green;
+    position: absolute;
+    border-radius: 5px;
+   
+}
+#projects .project-box .progress-bar.palavra::before{
+    content: '';
+    width: 240px;
+    height:20px;
+    background-color:#00A170;
+    position: absolute;
+    border-radius: 5px;
+   
+}
+
+/*İLETİŞİM*/
+#contact{
+    height: 800px;
+    background-color: #EDF1FF;
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    position: relative;
+   
+    
+}
+#contact .big-container{
+    width: 1200px;
+    height: 600px;
+}
+.container{
+    background-color: transparent;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px grey;  
+}
+
+
+.contact-div{
+    height: 600px;
+    width: 500px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px grey;  
+    font-size: 34px;
+}
+
+.deneme{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    
+}
+form{
+    display: flex;
+    flex-direction: column; 
+} 
+
+label{
+    font-size: 24px;
+    margin:10px 0 0 0 ;
+}
+.contact-heading{
+    position: absolute;
+    top: 30px;
+    font-size: 22px;
+}
+.contact-box{
+    height:50px;
+    width:200px;
+    position: absolute;
+    margin: 20px;
+    left:40%;
+    top:0;
+    font-size: 34px;
+    text-align: center;
+    
+}
+.contact-box h4{
+border-bottom: 3px solid black;
+}
+
+.contact-div p{
+    color:#363945;
+    padding: 10px;
+}
+
+
+textarea{
+    padding: 10px;
+    border-radius: 5px;
+    background-color:#cccccc;
+    resize: none;
+}
+
+textarea input[type="E-mail"]{
+    background-color: red;
+
+}
+input{
+    border: none;
+    padding: 10px;
+    width: 100% ;
+    margin: 20px 0 0 0;
+    border-radius: 5px;
+    background-color: #cccccc;
+    
+}
+input[type=submit]{
+    background-color: #369b36;
+
+}
+input:-webkit-autofill,
+input:-webkit-autofill:focus{
+   color: black;
+    box-shadow:0 0 0px 100px #fff inset; 
+    
+}
+input[type=submit]:focus{
+    background-color: #29bd29;
+}
+input:focus{
+    outline: none;
+    background-color: #fff;
+    
+}
+textarea:focus{
+    outline: none;
+    background-color: #fff;
+}
+
+
+/*KARİYER*/
+#career{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    flex-direction: column;
+}
+#career .career-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 450px;
+    border: 1px solid black;
+}
+
+#career .career-container .career-box{
+    display: flex;
+    align-items:center;
+    justify-content: space-around;   
+    width: 90%;
+}
+.career-box .job-box{
+    font-size: 25px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.career-box .appley-box{
+    background-color: #4BB543;
+    font-size: 22px;
+    padding:5px 20px 5px 20px;
+    border-radius: 5px;
+}
+.career-box .appley-box:hover{
+    background-color: #20a017;
+}
+.appley-box a{
+    text-decoration: none;
+    color:#2E4A62;
+    text-transform: uppercase;
+}
+
+.career-heading{
+    font-size: 34px;
+    margin: 0 0 20px 0;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+}
+.career-heading h4{
+    border-bottom: 3px solid black;
+}
+/*FOOTER*/
+footer{
+    height: 250px;
+    background-color: #262626;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+.social-box span .fab{
+    font-size: 44px;
+    padding: 10px 5px 5px 0px;
+}
+.social-box span .fa-facebook-square{
+    color: #1877f2;
+    cursor: pointer;
+    opacity: 0.5;
+}
+.social-box span .fa-twitter-square{
+    color:rgba(29,161,242,1.00) ;
+    cursor: pointer;
+    opacity: 0.5;
+
+}
+.social-box span .fa-instagram-square{
+    color:#cd486b ;
+    cursor: pointer;
+    opacity: 0.5;
+
+}
+.social-box span .fa-facebook-square:hover{
+    opacity: 1;
+    
+}
+.social-box span .fa-twitter-square:hover{  
+    opacity: 1;
+}
+.social-box span .fa-instagram-square:hover{
+    opacity: 1;
+}
+.address-box p{
+    font-size: 22px;
+    color: #666666;
+    padding: 5px 0 0 0;
+}
+.address-box h4{
+    font-size: 34px;
+    color: #666666;
+}
+
+/*COPYRİGHT*/
+#copyright{
+    height: 80px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    
+}
+.go-up {
+    bottom: 40px;
+    right: 40px;
+    position: fixed;
+    font-size: 40px;
+    color: #6699ff;
+}
+.go-up:hover{
+color: #3677f8;
+}
+
+/*MEDİA*/
+
+@media only screen and (max-width:1030px ){
+    nav ul{
+        display: none;
+    }
+    nav {
+        justify-content: center;
+        background-color: transparent;
+    }
+    .slogan{
+        font-size: 50px;
+    }
+    .button{
+        width: 150px;
+        height: 50px;
+        font-size: 30px;
+    }
+    #about{
+        height:750px ;
+    }
+    .about-text{
+        font-size: 20px;
+    }
+    .text-item{
+        font-size: 25px;
+    }
+    .mission-vission-text{
+        padding: 0px;
+    }
+    #projects{
+        display: none;
+    }
+
+    #contact{
+        height: 1500px;
+        
+    }
+    #contact .big-container{
+        height: 1500px;
+        flex-wrap: wrap;
+        width: 100%;
+       
+    }
+    .deneme{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .contact-div{
+        width: 450px;
+        margin:  20px;
+       
+    }
+    .container{
+        width: 450px;
+        margin: 90px 20px 20px 20px;
+      
+    }
+    .contact-box{
+        left: 25%;
+       
+    }
+    .social-box span .fab{
+        font-size: 24px;
+        padding-left: 5px;
+    }
+    .address-box p{
+        font-size: 20px;
+        color: #666666;
+        padding: 5px 0 0 5px;
+    }
+    .address-box h4{
+        font-size: 24px;
+        color: #666666;
+        padding-left: 5px;
+    }
+}
+
